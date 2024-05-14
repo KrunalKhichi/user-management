@@ -1,0 +1,72 @@
+.container {
+    padding: 20px
+}
+  
+input {
+    padding-block: 0px;
+    line-height: normal;
+}
+  
+.search-box {
+    position: relative;
+    width: 241px;
+    height: 38px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 212, 218);
+    padding: 6px 70px 6px 12px;
+    border-radius: 4px;
+}
+  
+@media only screen and (max-width: 420px) {
+    .search-box {
+      width: 175px;
+    }
+}
+  
+.search-box:focus, .search-box:active {
+    border-color: #7952b3;
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(121 82 179 / 25%);
+}
+  
+.search-box:disabled {
+    background-color: rgb(233, 236, 239)
+}
+  
+.search-box-container {
+    position: relative;
+    width: fit-content;
+}
+  
+.keyboard-shortcut {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    border-color: rgb(222, 226, 230);
+    border-radius: 2px;
+    height: 24px;
+    padding: 0 4px;
+    border: 1px solid rgb(222, 226, 230);
+}
+  
+.disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+  
+.no-click{
+    pointer-events: none;
+    cursor: not-allowed;
+}
+  
+.warning{
+    color: red;
+    margin: 0;
+    margin-top: 5px;
+}
